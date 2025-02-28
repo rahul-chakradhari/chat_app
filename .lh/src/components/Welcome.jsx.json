@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/components/Welcome.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1740748127197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740748345615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,12 @@\n import React from \"react\";\r\n \r\n const Welcome = () => {\r\n-  return <div></div>;\r\n+  return (\r\n+    <div>\r\n+      <img src={logo} alt=\"\" />\r\n+      <p>View and text directly to people present in the chat rooms.</p>\r\n+    </div>\r\n+  );\r\n };\r\n \r\n export default Welcome;\r\n"
+                },
+                {
+                    "date": 1740748379017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from \"react\";\r\n-\r\n+import logo from \"F:\\reactchat_appiconslive-chat.png\";\r\n const Welcome = () => {\r\n   return (\r\n     <div>\r\n       <img src={logo} alt=\"\" />\r\n"
+                },
+                {
+                    "date": 1740748427963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import React from \"react\";\r\n import logo from \"F:\\reactchat_appiconslive-chat.png\";\r\n const Welcome = () => {\r\n   return (\r\n-    <div>\r\n-      <img src={logo} alt=\"\" />\r\n+    <div className=\"welcome\">\r\n+      <img src={logo} alt=\"\" className=\"logo\" />\r\n       <p>View and text directly to people present in the chat rooms.</p>\r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1740748761008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from \"react\";\r\n-import logo from \"F:\\reactchat_appiconslive-chat.png\";\r\n+import logo from \"./components/images/live-chat.png\";\r\n const Welcome = () => {\r\n   return (\r\n     <div className=\"welcome\">\r\n       <img src={logo} alt=\"\" className=\"logo\" />\r\n"
+                },
+                {
+                    "date": 1740748807469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React from \"react\";\r\n-import logo from \"./components/images/live-chat.png\";\r\n+import logo from \"./images/live-chat.png\";\r\n const Welcome = () => {\r\n   return (\r\n     <div className=\"welcome\">\r\n       <img src={logo} alt=\"\" className=\"logo\" />\r\n"
+                },
+                {
+                    "date": 1740748822358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import React from \"react\";\r\n import logo from \"./images/live-chat.png\";\r\n const Welcome = () => {\r\n   return (\r\n     <div className=\"welcome\">\r\n"
+                }
+            ],
+            "date": 1740748127197,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\nconst Welcome = () => {\r\n  return <div></div>;\r\n};\r\n\r\nexport default Welcome;\r\n"
+        }
+    ]
+}

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1740652227753,
@@ -36,6 +36,14 @@
                 {
                     "date": 1740725535181,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,12 @@\n-import { useState } from \"react\";\n-import Sidebar from \"./components/Sidebar\";\n-import ChatArea from \"./components/Chatarea\";\n+import \"./App.css\";\n+import Maincontainer from \"./components/Maincontainer\";\n \n-const App = () => {\n-  const [selectedChat, setSelectedChat] = useState(null);\n-\n+function App() {\n   return (\n-    <div className=\"app\">\n-      <Sidebar setSelectedChat={setSelectedChat} />\n-      <ChatArea selectedChat={selectedChat} />\n+    <div className=\"App\">\n+      <Maincontainer />\n     </div>\n   );\n-};\n+}\n \n export default App;\n"
+                },
+                {
+                    "date": 1740755252638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,8 @@\n import \"./App.css\";\n import Maincontainer from \"./components/Maincontainer\";\n \n function App() {\n-  return (\n-    <div className=\"App\">\n-      <Maincontainer />\n-    </div>\n-  );\n+  return <div className=\"App\">{/* <Maincontainer />*/}</div>;\n }\n \n export default App;\n"
+                },
+                {
+                    "date": 1740755270753,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,14 @@\n import \"./App.css\";\n+import Login from \"./components/Login\";\n import Maincontainer from \"./components/Maincontainer\";\n \n function App() {\n-  return <div className=\"App\">{/* <Maincontainer />*/}</div>;\n+  return (\n+    <div className=\"App\">\n+      <Login />\n+      {/* <Maincontainer />*/}\n+    </div>\n+  );\n }\n \n export default App;\n"
                 }
             ],
             "date": 1740652227753,
