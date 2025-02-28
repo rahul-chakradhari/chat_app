@@ -1,0 +1,84 @@
+.main {
+  background-color: #f4f5f8;
+  height: 90vh;
+  width: 90vw;
+  display: flex;
+  border-radius: 20px;
+}
+.side {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+}
+.work {
+  background-color: aliceblue;
+  flex: 0.7;
+}
+.headers {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.search {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.box {
+  outline-width: 0;
+  border: none;
+  font-size: 1.25rem;
+  margin-left: 10px;
+}
+.conver {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 5px;
+  margin: 10px;
+  flex: 1;
+}
+.conversationitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #f5f5f5; /* Optional */
+}
+
+.icon {
+  grid-area: 1/1/3/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+  font-size: 2rem;
+  color: white;
+  height: 32px;
+  width: 32px;
+  padding: 2px;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
+.title {
+  grid-area: 1/2/2/4;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.4);
+}
+.time {
+  justify-self: flex-end;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+.message {
+  font-size: 0.5 rem;
+}

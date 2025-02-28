@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/components/Messagebyothers.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1740730518690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740730524358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from \"react\";\r\n \r\n const Messagebyothers = () => {\r\n-  return <div>Message by other user</div>;\r\n+  return <div>Message by user 2</div>;\r\n };\r\n \r\n export default Messagebyothers;\r\n"
+                },
+                {
+                    "date": 1740730829047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,20 @@\n import React from \"react\";\r\n+import \"./myStyles.css\";\r\n \r\n-const Messagebyothers = () => {\r\n-  return <div>Message by user 2</div>;\r\n-};\r\n+function MessageOthers() {\r\n+  var props1 = { name: \"Rahul\", message: \"Hi raj\" };\r\n+  return (\r\n+    <div className=\"other-message\">\r\n+      <div className=\"conversation\">\r\n+        <p className=\"con-icon\">{props1.name[0]}</p>\r\n+        <div className=\"other-text-content\">\r\n+          <p className=\"con-title\">{props1.name}</p>\r\n+          <p className=\"con-lastMessage\">{props1.message}</p>\r\n+          <p className=\"self-timestamp\">12:00am</p>\r\n+        </div>\r\n+      </div>\r\n+    </div>\r\n+  );\r\n+}\r\n \r\n-export default Messagebyothers;\r\n+export default MessageOthers;\r\n"
+                },
+                {
+                    "date": 1740731054098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import React from \"react\";\r\n import \"./myStyles.css\";\r\n \r\n function MessageOthers() {\r\n   var props1 = { name: \"Rahul\", message: \"Hi raj\" };\r\n"
+                },
+                {
+                    "date": 1740731413326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import \"./myStyles.css\";\r\n \r\n function MessageOthers() {\r\n-  var props1 = { name: \"Rahul\", message: \"Hi raj\" };\r\n+  var props1 = { name: \"Rahul\", message: \"Hi Raj\" };\r\n   return (\r\n     <div className=\"other-message\">\r\n       <div className=\"conversation\">\r\n         <p className=\"con-icon\">{props1.name[0]}</p>\r\n"
+                },
+                {
+                    "date": 1740731718285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div className=\"other-message\">\r\n       <div className=\"conversation\">\r\n         <p className=\"con-icon\">{props1.name[0]}</p>\r\n-        <div className=\"other-text-content\">\r\n+        <div className=\"othertextcontent\">\r\n           <p className=\"con-title\">{props1.name}</p>\r\n           <p className=\"con-lastMessage\">{props1.message}</p>\r\n           <p className=\"self-timestamp\">12:00am</p>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1740732384395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,8 @@\n   var props1 = { name: \"Rahul\", message: \"Hi Raj\" };\r\n   return (\r\n     <div className=\"other-message\">\r\n       <div className=\"conversation\">\r\n-        <p className=\"con-icon\">{props1.name[0]}</p>\r\n         <div className=\"othertextcontent\">\r\n           <p className=\"con-title\">{props1.name}</p>\r\n           <p className=\"con-lastMessage\">{props1.message}</p>\r\n           <p className=\"self-timestamp\">12:00am</p>\r\n"
+                },
+                {
+                    "date": 1740732406375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n   return (\r\n     <div className=\"other-message\">\r\n       <div className=\"conversation\">\r\n         <div className=\"othertextcontent\">\r\n-          <p className=\"con-title\">{props1.name}</p>\r\n           <p className=\"con-lastMessage\">{props1.message}</p>\r\n           <p className=\"self-timestamp\">12:00am</p>\r\n         </div>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1740732439796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import \"./myStyles.css\";\r\n \r\n function MessageOthers() {\r\n-  var props1 = { name: \"Rahul\", message: \"Hi Raj\" };\r\n+  var props1 = { name: \"Rahul\", message: \"be in a meet at 6:30 pm today\" };\r\n   return (\r\n     <div className=\"other-message\">\r\n       <div className=\"conversation\">\r\n         <div className=\"othertextcontent\">\r\n"
+                },
+                {
+                    "date": 1740734029816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,21 @@\n import \"./myStyles.css\";\r\n \r\n function MessageOthers() {\r\n-  var props1 = { name: \"Rahul\", message: \"be in a meet at 6:30 pm today\" };\r\n+  var props1 = { name: \"Rahul\", message: \"Hi\" };\r\n+  var props2 = { name: \"Rahul\", message: \"aaghe kya krna hai ??\" };\r\n+\r\n   return (\r\n     <div className=\"other-message\">\r\n       <div className=\"conversation\">\r\n         <div className=\"othertextcontent\">\r\n           <p className=\"con-lastMessage\">{props1.message}</p>\r\n-          <p className=\"self-timestamp\">12:00am</p>\r\n+          <p className=\"self-timestamp\">10:00am</p>\r\n         </div>\r\n+        <div className=\"othertextcontent\">\r\n+          <p className=\"con-lastMessage\">{props2.message}</p>\r\n+          <p className=\"self-timestamp\">11:00am</p>\r\n+        </div>\r\n       </div>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1740734403043,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,23 +1,27 @@\n import \"./myStyles.css\";\r\n \r\n-function MessageOthers() {\r\n-  var props1 = { name: \"Rahul\", message: \"Hi\" };\r\n-  var props2 = { name: \"Rahul\", message: \"aaghe kya krna hai ??\" };\r\n+function Messagebyothers() {\r\n+  const messages = [\r\n+    { name: \"Other\", message: \"Hi Buddy\", time: \"10:00am\" },\r\n+    {\r\n+      name: \"Other\",\r\n+      message: \"Be in a meet at 6:30 pm today\",\r\n+      time: \"11:00am\",\r\n+    },\r\n+  ];\r\n \r\n   return (\r\n     <div className=\"other-message\">\r\n       <div className=\"conversation\">\r\n-        <div className=\"othertextcontent\">\r\n-          <p className=\"con-lastMessage\">{props1.message}</p>\r\n-          <p className=\"self-timestamp\">10:00am</p>\r\n-        </div>\r\n-        <div className=\"othertextcontent\">\r\n-          <p className=\"con-lastMessage\">{props2.message}</p>\r\n-          <p className=\"self-timestamp\">11:00am</p>\r\n-        </div>\r\n+        {messages.map((msg, index) => (\r\n+          <div key={index} className=\"othertextcontent\">\r\n+            <p className=\"con-lastMessage\">{msg.message}</p>\r\n+            <p className=\"self-timestamp\">{msg.time}</p>\r\n+          </div>\r\n+        ))}\r\n       </div>\r\n     </div>\r\n   );\r\n }\r\n \r\n-export default MessageOthers;\r\n+export default Messagebyothers;\r\n"
+                },
+                {
+                    "date": 1740734460990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import \"./myStyles.css\";\r\n \r\n-function Messagebyothers() {\r\n+function MessageOthers() {\r\n   const messages = [\r\n     { name: \"Other\", message: \"Hi Buddy\", time: \"10:00am\" },\r\n     {\r\n       name: \"Other\",\r\n@@ -23,5 +23,5 @@\n     </div>\r\n   );\r\n }\r\n \r\n-export default Messagebyothers;\r\n+export default Messagethers;\r\n"
+                },
+                {
+                    "date": 1740734467060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,27 +1,23 @@\n import \"./myStyles.css\";\r\n \r\n function MessageOthers() {\r\n-  const messages = [\r\n-    { name: \"Other\", message: \"Hi Buddy\", time: \"10:00am\" },\r\n-    {\r\n-      name: \"Other\",\r\n-      message: \"Be in a meet at 6:30 pm today\",\r\n-      time: \"11:00am\",\r\n-    },\r\n-  ];\r\n+  var props1 = { name: \"Rahul\", message: \"Hi\" };\r\n+  var props2 = { name: \"Rahul\", message: \"aaghe kya krna hai ??\" };\r\n \r\n   return (\r\n     <div className=\"other-message\">\r\n       <div className=\"conversation\">\r\n-        {messages.map((msg, index) => (\r\n-          <div key={index} className=\"othertextcontent\">\r\n-            <p className=\"con-lastMessage\">{msg.message}</p>\r\n-            <p className=\"self-timestamp\">{msg.time}</p>\r\n-          </div>\r\n-        ))}\r\n+        <div className=\"othertextcontent\">\r\n+          <p className=\"con-lastMessage\">{props1.message}</p>\r\n+          <p className=\"self-timestamp\">10:00am</p>\r\n+        </div>\r\n+        <div className=\"othertextcontent\">\r\n+          <p className=\"con-lastMessage\">{props2.message}</p>\r\n+          <p className=\"self-timestamp\">11:00am</p>\r\n+        </div>\r\n       </div>\r\n     </div>\r\n   );\r\n }\r\n \r\n-export default Messagethers;\r\n+export default MessageOthers;\r\n"
+                },
+                {
+                    "date": 1740734485173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,16 @@\n import \"./myStyles.css\";\r\n \r\n function MessageOthers() {\r\n-  var props1 = { name: \"Rahul\", message: \"Hi\" };\r\n-  var props2 = { name: \"Rahul\", message: \"aaghe kya krna hai ??\" };\r\n+  var props1 = { name: \"Rahul\", message: \"be in a meet at 6:30 pm today\" };\r\n \r\n   return (\r\n     <div className=\"other-message\">\r\n       <div className=\"conversation\">\r\n         <div className=\"othertextcontent\">\r\n           <p className=\"con-lastMessage\">{props1.message}</p>\r\n-          <p className=\"self-timestamp\">10:00am</p>\r\n+          <p className=\"self-timestamp\">12:00am</p>\r\n         </div>\r\n-        <div className=\"othertextcontent\">\r\n-          <p className=\"con-lastMessage\">{props2.message}</p>\r\n-          <p className=\"self-timestamp\">11:00am</p>\r\n-        </div>\r\n       </div>\r\n     </div>\r\n   );\r\n }\r\n"
+                }
+            ],
+            "date": 1740730518690,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\nconst Messagebyothers = () => {\r\n  return <div>Message by other user</div>;\r\n};\r\n\r\nexport default Messagebyothers;\r\n"
+        }
+    ]
+}

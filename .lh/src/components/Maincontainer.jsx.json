@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/components/Maincontainer.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1740651064736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740651160942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,12 @@\n import React from \"react\";\r\n import \"./Mystyles.css\";\r\n import Sidebar from \"./Sidebar\";\r\n-import Workarea from \"./Workarea\";\r\n+\r\n const Maincontainer = () => {\r\n   return (\r\n     <div className=\"main\">\r\n       <Sidebar />\r\n-      {/*<Workarea />*/}\r\n     </div>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1740651185918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,14 @@\n import React from \"react\";\r\n import \"./Mystyles.css\";\r\n import Sidebar from \"./Sidebar\";\r\n+import Chatarea from \"./Chatarea\";\r\n \r\n const Maincontainer = () => {\r\n   return (\r\n     <div className=\"main\">\r\n       <Sidebar />\r\n+      <Chatarea />\r\n     </div>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1740720805730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import React from \"react\";\r\n import \"./Mystyles.css\";\r\n import Sidebar from \"./Sidebar\";\r\n import Chatarea from \"./Chatarea\";\r\n \r\n"
+                }
+            ],
+            "date": 1740651064736,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\nimport \"./Mystyles.css\";\r\nimport Sidebar from \"./Sidebar\";\r\nimport Workarea from \"./Workarea\";\r\nconst Maincontainer = () => {\r\n  return (\r\n    <div className=\"main\">\r\n      <Sidebar />\r\n      {/*<Workarea />*/}\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default Maincontainer;\r\n"
+        }
+    ]
+}

@@ -1,0 +1,111 @@
+.main {
+  background-color: #f4f5f8;
+  height: 90vh;
+  width: 90vw;
+  display: flex;
+  border-radius: 20px;
+}
+.side {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+}
+.chat {
+  background-color: aliceblue;
+  flex: 0.7;
+}
+.headers {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.search {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+.box {
+  outline-width: 0;
+  border: none;
+  font-size: 1.25rem;
+  margin-left: 10px;
+}
+.conver {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 5px;
+  margin: 10px;
+  flex: 1;
+}
+.conversationitem {
+  display: flex;
+  align-items: center; /* Items ko vertical center align karega */
+  gap: 10px; /* Icon aur text ke beech gap */
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #f5f5f5; /* Light background */
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  flex-shrink: 0; /* Icon ka size maintain rahega */
+}
+
+.conversation-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ye ensure karega ki text area full width le */
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.message {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.time {
+  margin-right: 25px;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.4);
+  flex-shrink: 0; /* Time ka size fix rahe */
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+}
+.chattingwith {
+  background-color: green;
+}
+.mess {
+  background-color: aquamarine;
+  flex-grow: 1;
+}
+.inputbox {
+  background-color: green;
+}
+.trash {
+  color: greenyellow;
+}

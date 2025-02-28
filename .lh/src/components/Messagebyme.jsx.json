@@ -1,0 +1,70 @@
+{
+    "sourceFile": "src/components/Messagebyme.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1740730494667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740730534507,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import React from \"react\";\r\n \r\n const Messagebyme = () => {\r\n-  return <div>This is me</div>;\r\n+  return <div>Message by user 1</div>;\r\n };\r\n \r\n export default Messagebyme;\r\n"
+                },
+                {
+                    "date": 1740730960833,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,16 @@\n import React from \"react\";\r\n+import \"./myStyles.css\";\r\n \r\n-const Messagebyme = () => {\r\n-  return <div>Message by user 1</div>;\r\n-};\r\n+function Messagebyme() {\r\n+  var props2 = { message: \"This is a Sample!\" };\r\n+  return (\r\n+    <div className=\"self-message-container\">\r\n+      <div className=\"messageBox\">\r\n+        <p>{props2.message}</p>\r\n+        <p className=\"self-timeStamp\">12:00am</p>\r\n+      </div>\r\n+    </div>\r\n+  );\r\n+}\r\n \r\n export default Messagebyme;\r\n"
+                },
+                {
+                    "date": 1740731050596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import React from \"react\";\r\n import \"./myStyles.css\";\r\n \r\n function Messagebyme() {\r\n   var props2 = { message: \"This is a Sample!\" };\r\n"
+                },
+                {
+                    "date": 1740731432824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import \"./myStyles.css\";\r\n \r\n-function Messagebyme() {\r\n+function MessageByMe() {\r\n   var props2 = { message: \"This is a Sample!\" };\r\n   return (\r\n     <div className=\"self-message-container\">\r\n       <div className=\"messageBox\">\r\n@@ -11,5 +11,5 @@\n     </div>\r\n   );\r\n }\r\n \r\n-export default Messagebyme;\r\n+export default MessageByMe;\r\n"
+                },
+                {
+                    "date": 1740732332981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n function MessageByMe() {\r\n   var props2 = { message: \"This is a Sample!\" };\r\n   return (\r\n-    <div className=\"self-message-container\">\r\n+    <div className=\"selfmessagecontainer\">\r\n       <div className=\"messageBox\">\r\n         <p>{props2.message}</p>\r\n         <p className=\"self-timeStamp\">12:00am</p>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1740732472440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import \"./myStyles.css\";\r\n \r\n function MessageByMe() {\r\n-  var props2 = { message: \"This is a Sample!\" };\r\n+  var props2 = { message: \"Hey buddy when to meet up??\" };\r\n   return (\r\n     <div className=\"selfmessagecontainer\">\r\n       <div className=\"messageBox\">\r\n         <p>{props2.message}</p>\r\n"
+                },
+                {
+                    "date": 1740732478164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div className=\"selfmessagecontainer\">\r\n       <div className=\"messageBox\">\r\n         <p>{props2.message}</p>\r\n-        <p className=\"self-timeStamp\">12:00am</p>\r\n+        <p className=\"self-timeStamp\">10:00am</p>\r\n       </div>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1740732500794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import \"./myStyles.css\";\r\n \r\n function MessageByMe() {\r\n-  var props2 = { message: \"Hey buddy when to meet up??\" };\r\n+  var props2 = { message: \"be in a meet at 6:30 pm today\" };\r\n   return (\r\n     <div className=\"selfmessagecontainer\">\r\n       <div className=\"messageBox\">\r\n         <p>{props2.message}</p>\r\n"
+                },
+                {
+                    "date": 1740732539865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import \"./myStyles.css\";\r\n \r\n function MessageByMe() {\r\n-  var props2 = { message: \"be in a meet at 6:30 pm today\" };\r\n+  var props2 = { message: \"what the plan for 6:30 pm today?? \" };\r\n   return (\r\n     <div className=\"selfmessagecontainer\">\r\n       <div className=\"messageBox\">\r\n         <p>{props2.message}</p>\r\n"
+                },
+                {
+                    "date": 1740734077330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,20 @@\n import \"./myStyles.css\";\r\n \r\n function MessageByMe() {\r\n-  var props2 = { message: \"what the plan for 6:30 pm today?? \" };\r\n+  var props3 = { message: \"Hi\" };\r\n+\r\n+  var props4 = { message: \"what the plan for 6:30 pm today?? \" };\r\n   return (\r\n     <div className=\"selfmessagecontainer\">\r\n       <div className=\"messageBox\">\r\n-        <p>{props2.message}</p>\r\n-        <p className=\"self-timeStamp\">10:00am</p>\r\n+        <p>{props3.message}</p>\r\n+        <p className=\"self-timeStamp\">10:05am</p>\r\n       </div>\r\n+      <div className=\"messageBox\">\r\n+        <p>{props4.message}</p>\r\n+        <p className=\"self-timeStamp\">12:00am</p>\r\n+      </div>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1740734416842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,20 @@\n import \"./myStyles.css\";\r\n \r\n function MessageByMe() {\r\n-  var props3 = { message: \"Hi\" };\r\n+  const messages = [\r\n+    { message: \"Me Hi\", time: \"10:05am\" },\r\n+    { message: \"Aaj milte hai coding question solve krenge\", time: \"12:00pm\" },\r\n+  ];\r\n \r\n-  var props4 = { message: \"what the plan for 6:30 pm today?? \" };\r\n   return (\r\n     <div className=\"selfmessagecontainer\">\r\n-      <div className=\"messageBox\">\r\n-        <p>{props3.message}</p>\r\n-        <p className=\"self-timeStamp\">10:05am</p>\r\n-      </div>\r\n-      <div className=\"messageBox\">\r\n-        <p>{props4.message}</p>\r\n-        <p className=\"self-timeStamp\">12:00am</p>\r\n-      </div>\r\n+      {messages.map((msg, index) => (\r\n+        <div key={index} className=\"messageBox\">\r\n+          <p>{msg.message}</p>\r\n+          <p className=\"self-timeStamp\">{msg.time}</p>\r\n+        </div>\r\n+      ))}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1740734453407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,20 @@\n import \"./myStyles.css\";\r\n \r\n function MessageByMe() {\r\n-  const messages = [\r\n-    { message: \"Me Hi\", time: \"10:05am\" },\r\n-    { message: \"Aaj milte hai coding question solve krenge\", time: \"12:00pm\" },\r\n-  ];\r\n+  var props3 = { message: \"Hi\" };\r\n \r\n+  var props4 = { message: \"what the plan for 6:30 pm today?? \" };\r\n   return (\r\n     <div className=\"selfmessagecontainer\">\r\n-      {messages.map((msg, index) => (\r\n-        <div key={index} className=\"messageBox\">\r\n-          <p>{msg.message}</p>\r\n-          <p className=\"self-timeStamp\">{msg.time}</p>\r\n-        </div>\r\n-      ))}\r\n+      <div className=\"messageBox\">\r\n+        <p>{props3.message}</p>\r\n+        <p className=\"self-timeStamp\">10:05am</p>\r\n+      </div>\r\n+      <div className=\"messageBox\">\r\n+        <p>{props4.message}</p>\r\n+        <p className=\"self-timeStamp\">12:00am</p>\r\n+      </div>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1740734493821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,14 @@\n import \"./myStyles.css\";\r\n \r\n function MessageByMe() {\r\n-  var props3 = { message: \"Hi\" };\r\n-\r\n-  var props4 = { message: \"what the plan for 6:30 pm today?? \" };\r\n+  var props2 = { message: \"what the plan for 6:30 pm today?? \" };\r\n   return (\r\n     <div className=\"selfmessagecontainer\">\r\n       <div className=\"messageBox\">\r\n-        <p>{props3.message}</p>\r\n-        <p className=\"self-timeStamp\">10:05am</p>\r\n+        <p>{props2.message}</p>\r\n+        <p className=\"self-timeStamp\">10:00am</p>\r\n       </div>\r\n-      <div className=\"messageBox\">\r\n-        <p>{props4.message}</p>\r\n-        <p className=\"self-timeStamp\">12:00am</p>\r\n-      </div>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                }
+            ],
+            "date": 1740730494667,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\nconst Messagebyme = () => {\r\n  return <div>This is me</div>;\r\n};\r\n\r\nexport default Messagebyme;\r\n"
+        }
+    ]
+}

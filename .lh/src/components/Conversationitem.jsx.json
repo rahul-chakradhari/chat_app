@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/components/Conversationitem.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1740645079270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1740647760616,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,14 @@\n import React from \"react\";\r\n \r\n-const Conversationitem = () => {\r\n-  return <div>ConversationItem</div>;\r\n+const Conversationitem = (props) => {\r\n+  return (\r\n+    <div className=\"conversationitem\">\r\n+      <p className=\"icon\">{props.name[0]}</p>\r\n+      <p className=\"name\">{props.name}</p>\r\n+      <p className=\"messaage\">{props.lastMessage}</p>\r\n+      <p className=\"time\">{props.timeStamp}</p>\r\n+    </div>\r\n+  );\r\n };\r\n \r\n export default Conversationitem;\r\n"
+                },
+                {
+                    "date": 1740650539670,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,12 @@\n const Conversationitem = (props) => {\r\n   return (\r\n     <div className=\"conversationitem\">\r\n       <p className=\"icon\">{props.name[0]}</p>\r\n-      <p className=\"name\">{props.name}</p>\r\n-      <p className=\"messaage\">{props.lastMessage}</p>\r\n+      <div className=\"conversation-text\">\r\n+        <p className=\"title\">{props.name}</p>\r\n+        <p className=\"message\">{props.lastMessage}</p>\r\n+      </div>\r\n       <p className=\"time\">{props.timeStamp}</p>\r\n     </div>\r\n   );\r\n };\r\n"
+                },
+                {
+                    "date": 1740720838206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,4 @@\n-import React from \"react\";\r\n-\r\n const Conversationitem = (props) => {\r\n   return (\r\n     <div className=\"conversationitem\">\r\n       <p className=\"icon\">{props.name[0]}</p>\r\n"
+                }
+            ],
+            "date": 1740645079270,
+            "name": "Commit-0",
+            "content": "import React from \"react\";\r\n\r\nconst Conversationitem = () => {\r\n  return <div>ConversationItem</div>;\r\n};\r\n\r\nexport default Conversationitem;\r\n"
+        }
+    ]
+}
