@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 26,
+            "activePatchIndex": 30,
             "patches": [
                 {
                     "date": 1740642699563,
@@ -112,6 +112,22 @@
                 {
                     "date": 1740726444326,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,16 @@\n import { useState } from \"react\";\r\n+import AccountCircleIcon from \"@mui/icons-material/AccountCircle\";\r\n+import PersonAddAlt1Icon from \"@mui/icons-material/PersonAddAlt1\";\r\n+import GroupAddIcon from \"@mui/icons-material/GroupAdd\";\r\n+import AddCircleIcon from \"@mui/icons-material/AddCircle\";\r\n+import DarkModeIcon from \"@mui/icons-material/DarkMode\";\r\n+import SearchIcon from \"@mui/icons-material/Search\";\r\n import Conversationitem from \"./Conversationitem\";\r\n import \"./Mystyles.css\";\r\n+import { IconButton } from \"@mui/material\";\r\n \r\n-const Sidebar = ({ setSelectedChat }) => {\r\n+const Sidebar = () => {\r\n   const [conversations, setConversations] = useState([\r\n     {\r\n       id: 1,\r\n       name: \"Raj Vikaramaditya\",\r\n@@ -25,16 +32,40 @@\n   ]);\r\n \r\n   return (\r\n     <div className=\"side\">\r\n+      <div className=\"headers\">\r\n+        <div>\r\n+          <IconButton>\r\n+            <AccountCircleIcon />\r\n+          </IconButton>\r\n+        </div>\r\n+        <div>\r\n+          <IconButton>\r\n+            <PersonAddAlt1Icon />\r\n+          </IconButton>\r\n+          <IconButton>\r\n+            <GroupAddIcon />\r\n+          </IconButton>\r\n+          <IconButton>\r\n+            <AddCircleIcon />\r\n+          </IconButton>\r\n+          <IconButton>\r\n+            <DarkModeIcon />\r\n+          </IconButton>\r\n+        </div>\r\n+      </div>\r\n+\r\n+      <div className=\"search\">\r\n+        <IconButton>\r\n+          <SearchIcon />\r\n+        </IconButton>\r\n+        <input placeholder=\"Search\" className=\"box\" />\r\n+      </div>\r\n+\r\n       <div className=\"conversation\">\r\n         {conversations.map((conversation) => (\r\n-          <div\r\n-            key={conversation.id}\r\n-            onClick={() => setSelectedChat(conversation)}\r\n-          >\r\n-            <Conversationitem {...conversation} />\r\n-          </div>\r\n+          <Conversationitem key={conversation.id} {...conversation} />\r\n         ))}\r\n       </div>\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1740820073475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n import SearchIcon from \"@mui/icons-material/Search\";\r\n import Conversationitem from \"./Conversationitem\";\r\n import \"./Mystyles.css\";\r\n import { IconButton } from \"@mui/material\";\r\n+import { useNavigate } from \"react-router-dom\";\r\n \r\n const Sidebar = () => {\r\n   const [conversations, setConversations] = useState([\r\n     {\r\n@@ -29,9 +30,9 @@\n       lastMessage: \"subscribe to my channel\",\r\n       timeStamp: \"today\",\r\n     },\r\n   ]);\r\n-\r\n+  const navigate = useNavigate();\r\n   return (\r\n     <div className=\"side\">\r\n       <div className=\"headers\">\r\n         <div>\r\n@@ -40,9 +41,13 @@\n           </IconButton>\r\n         </div>\r\n         <div>\r\n           <IconButton>\r\n-            <PersonAddAlt1Icon />\r\n+            <PersonAddAlt1Icon\r\n+              onClick={() => {\r\n+                navigate(\"users\");\r\n+              }}\r\n+            />\r\n           </IconButton>\r\n           <IconButton>\r\n             <GroupAddIcon />\r\n           </IconButton>\r\n"
+                },
+                {
+                    "date": 1740820269883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,12 +48,16 @@\n               }}\r\n             />\r\n           </IconButton>\r\n           <IconButton>\r\n-            <GroupAddIcon />\r\n+            <GroupAddIcon  onClick={() => {\r\n+                navigate(\"groups\");\r\n+              }}/>\r\n           </IconButton>\r\n           <IconButton>\r\n-            <AddCircleIcon />\r\n+            <AddCircleIcon  onClick={() => {\r\n+                navigate(\"creategroups\");\r\n+              }} />\r\n           </IconButton>\r\n           <IconButton>\r\n             <DarkModeIcon />\r\n           </IconButton>\r\n"
+                },
+                {
+                    "date": 1740820391176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n           </IconButton>\r\n           <IconButton>\r\n             <GroupAddIcon\r\n               onClick={() => {\r\n-                navigate(\"groups\");\r\n+                navigate(\"users\");\r\n               }}\r\n             />\r\n           </IconButton>\r\n           <IconButton>\r\n"
+                },
+                {
+                    "date": 1740820648960,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n           </IconButton>\r\n           <IconButton>\r\n             <GroupAddIcon\r\n               onClick={() => {\r\n-                navigate(\"users\");\r\n+                navigate(\"groups\");\r\n               }}\r\n             />\r\n           </IconButton>\r\n           <IconButton>\r\n"
                 }
             ],
             "date": 1740642699563,

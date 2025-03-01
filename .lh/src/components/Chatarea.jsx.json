@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 42,
+            "activePatchIndex": 43,
             "patches": [
                 {
                     "date": 1740651205181,
@@ -176,6 +176,10 @@
                 {
                     "date": 1740747727353,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,8 +31,14 @@\n         <Messagebyme />\r\n         <MessageOthers />\r\n         <Messagebyme />\r\n         <MessageOthers />\r\n+        <Messagebyme />\r\n+        <MessageOthers />\r\n+        <Messagebyme />\r\n+        <MessageOthers />\r\n+        <Messagebyme />\r\n+        <MessageOthers />\r\n       </div>\r\n \r\n       <div className=\"inputbox\">\r\n         <input\r\n"
+                },
+                {
+                    "date": 1740808018145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n       <div className=\"inputbox\">\r\n         <input\r\n           type=\"text\"\r\n           placeholder=\"Type a message...\"\r\n-          className=\"inputbox\"\r\n+          className=\"input1box\"\r\n         />\r\n         <IconButton>\r\n           <SendIcon />\r\n         </IconButton>\r\n"
                 }
             ],
             "date": 1740651205181,

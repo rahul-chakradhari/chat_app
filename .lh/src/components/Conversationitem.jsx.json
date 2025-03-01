@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1740645079270,
@@ -20,6 +20,18 @@
                 {
                     "date": 1740720838206,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,4 @@\n-import React from \"react\";\r\n-\r\n const Conversationitem = (props) => {\r\n   return (\r\n     <div className=\"conversationitem\">\r\n       <p className=\"icon\">{props.name[0]}</p>\r\n"
+                },
+                {
+                    "date": 1740821648708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n const Conversationitem = (props) => {\r\n   return (\r\n-    <div className=\"conversationitem\">\r\n+    <div className=\"conversationitem\" onClick={() => {\r\n+      navigate(\"chat\");\r\n+    }} >\r\n       <p className=\"icon\">{props.name[0]}</p>\r\n       <div className=\"conversation-text\">\r\n         <p className=\"title\">{props.name}</p>\r\n         <p className=\"message\">{props.lastMessage}</p>\r\n"
+                },
+                {
+                    "date": 1740821688620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,7 @@\n+import { useNavigate } from \"react-router-dom\";\r\n+\r\n+const navigate=useNavigate();\r\n const Conversationitem = (props) => {\r\n   return (\r\n     <div\r\n       className=\"conversationitem\"\r\n"
+                },
+                {
+                    "date": 1740821788261,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { useNavigate } from \"react-router-dom\";\r\n \r\n-const navigate = useNavigate();\r\n const Conversationitem = (props) => {\r\n+  const navigate = useNavigate();\r\n+\r\n   return (\r\n     <div\r\n       className=\"conversationitem\"\r\n       onClick={() => {\r\n"
                 }
             ],
             "date": 1740645079270,

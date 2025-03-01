@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 232,
+            "activePatchIndex": 242,
             "patches": [
                 {
                     "date": 1740642740745,
@@ -936,6 +936,46 @@
                 {
                     "date": 1740756926813,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -292,6 +292,6 @@\n   margin-top: 201px;\r\n   margin-left: 75px;\r\n }\r\n .logintitle {\r\n-  size: 30px;\r\n+  font-size: 30px;\r\n }\r\n"
+                },
+                {
+                    "date": 1740803770556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -267,8 +267,9 @@\n   width: 90vw;\r\n   background-color: #f4f5f8;\r\n   border-radius: 20px;\r\n   display: flex;\r\n+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\n }\r\n .loginimage {\r\n   flex: 0.3;\r\n }\r\n"
+                },
+                {
+                    "date": 1740803972387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,8 +20,9 @@\n   padding: 10px 5px;\r\n   margin: 10px;\r\n   display: flex;\r\n   justify-content: space-between;\r\n+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n }\r\n .search {\r\n   background-color: white;\r\n   border-radius: 20px;\r\n"
+                },
+                {
+                    "date": 1740803982463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n   margin: 10px 5px;\r\n   flex: 1;\r\n   margin-right: 11px;\r\n   padding: 10px 5px;\r\n+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n }\r\n .conversationitem {\r\n   display: flex;\r\n   align-items: center; /* Items ko vertical center align karega */\r\n"
+                },
+                {
+                    "date": 1740804064284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,9 +68,9 @@\n   margin-right: auto;\r\n   margin-top: 7px;\r\n   background-color: #f5f5f5; /* Light background */\r\n   width: 100%;\r\n-  overflow: scroll;\r\n+  overflow: hidden;\r\n }\r\n .conversationitem::-webkit-scrollbar {\r\n   display: none;\r\n }\r\n"
+                },
+                {
+                    "date": 1740804222234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,17 +20,20 @@\n   padding: 10px 5px;\r\n   margin: 10px;\r\n   display: flex;\r\n   justify-content: space-between;\r\n-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,\r\n+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n }\r\n .search {\r\n   background-color: white;\r\n   border-radius: 20px;\r\n   padding: 10px 10px;\r\n   margin: 10px;\r\n   display: flex;\r\n   align-items: center;\r\n+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,\r\n+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n }\r\n .box {\r\n   outline-width: 0;\r\n   border: none;\r\n@@ -50,9 +53,10 @@\n   margin: 10px 5px;\r\n   flex: 1;\r\n   margin-right: 11px;\r\n   padding: 10px 5px;\r\n-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,\r\n+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n }\r\n .conversationitem {\r\n   display: flex;\r\n   align-items: center; /* Items ko vertical center align karega */\r\n"
+                },
+                {
+                    "date": 1740804299966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,12 +51,14 @@\n   background-color: white;\r\n   border-radius: 20px;\r\n   margin: 10px 5px;\r\n   flex: 1;\r\n+  max-height: 65vh; \r\n   margin-right: 11px;\r\n   padding: 10px 5px;\r\n   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,\r\n     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n+\r\n }\r\n .conversationitem {\r\n   display: flex;\r\n   align-items: center; /* Items ko vertical center align karega */\r\n"
+                },
+                {
+                    "date": 1740804329903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,12 @@\n   margin-right: auto;\r\n   margin-top: 7px;\r\n   background-color: #f5f5f5; /* Light background */\r\n   width: 100%;\r\n-  overflow: hidden;\r\n+  width: calc(100% - 10px); /* Ensure karega ki andar hi rahe */\r\n+  overflow: hidden;  /* Extra content hide */\r\n+  white-space: nowrap; /* Ek hi line me rahe */\r\n+  text-overflow: ellipsis; \r\n }\r\n .conversationitem::-webkit-scrollbar {\r\n   display: none;\r\n }\r\n"
+                },
+                {
+                    "date": 1740804405788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n   gap: 12px; /* Icon aur text ke beech gap */\r\n   padding: 10px;\r\n   margin: 3px;\r\n   border-radius: 20px;\r\n-  margin-left: 0px;\r\n+  margin-left: -16px;\r\n   margin-right: auto;\r\n   margin-top: 7px;\r\n   background-color: #f5f5f5; /* Light background */\r\n   width: 100%;\r\n"
+                },
+                {
+                    "date": 1740804457581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,9 @@\n   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,\r\n     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n }\r\n .conversationitem {\r\n+  size: 12px;\r\n   display: flex;\r\n   align-items: center; /* Items ko vertical center align karega */\r\n   gap: 12px; /* Icon aur text ke beech gap */\r\n   padding: 10px;\r\n"
+                },
+                {
+                    "date": 1740804498216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n   margin-right: auto;\r\n   margin-top: 7px;\r\n   background-color: #f5f5f5; /* Light background */\r\n   width: 100%;\r\n-  width: calc(100% - 10px); /* Ensure karega ki andar hi rahe */\r\n+  width: calc(100% - 12px); /* Ensure karega ki andar hi rahe */\r\n   overflow: hidden; /* Extra content hide */\r\n   white-space: nowrap; /* Ek hi line me rahe */\r\n   text-overflow: ellipsis;\r\n }\r\n"
                 }
             ],
             "date": 1740642740745,
