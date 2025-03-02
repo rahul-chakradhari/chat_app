@@ -3,7 +3,6 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import PersonAddAlt1Icon from "@mui/icons-material/PersonAddAlt1";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
 import AddCircleIcon from "@mui/icons-material/AddCircle";
-import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import SearchIcon from "@mui/icons-material/Search";
 import Conversationitem from "./Conversationitem";
@@ -12,7 +11,6 @@ import { IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 const Sidebar = () => {
-  const [lighttheme, setlightTheme] = useState(true);
   const [conversations, setConversations] = useState([
     {
       id: 1,
@@ -36,7 +34,7 @@ const Sidebar = () => {
   const navigate = useNavigate();
   return (
     <div className="side">
-      <div className={"headers " + (lighttheme ? "" : "dark")}>
+      <div className="headers dark">
         <div>
           <IconButton>
             <AccountCircleIcon />
@@ -64,30 +62,20 @@ const Sidebar = () => {
               }}
             />
           </IconButton>
-          <IconButton
-            onClick={() => {
-              setlightTheme((prevValue) => {
-                return !prevValue;
-              });
-            }}
-          >
-            {lighttheme && <DarkModeIcon />}
-            {!lighttheme && <LightModeIcon />}
+          <IconButton>
+            <DarkModeIcon />
           </IconButton>
         </div>
       </div>
 
-      <div className={"search " + (lighttheme ? "" : "dark")}>
+      <div className="search">
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <input
-          placeholder="Search"
-          className={"box " + (lighttheme ? "" : "dark")}
-        />
+        <input placeholder="Search" className="box" />
       </div>
 
-      <div className={"conversation " + (lighttheme ? "" : "dark")}>
+      <div className="conversation">
         {conversations.map((conversation) => (
           <Conversationitem key={conversation.id} {...conversation} />
         ))}

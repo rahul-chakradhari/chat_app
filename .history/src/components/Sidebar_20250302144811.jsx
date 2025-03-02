@@ -87,7 +87,7 @@ const Sidebar = () => {
         />
       </div>
 
-      <div className={"conversation " + (lighttheme ? "" : "dark")}>
+      <div className="conversation">
         {conversations.map((conversation) => (
           <Conversationitem key={conversation.id} {...conversation} />
         ))}

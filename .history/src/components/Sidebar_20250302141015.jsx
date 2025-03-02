@@ -36,7 +36,7 @@ const Sidebar = () => {
   const navigate = useNavigate();
   return (
     <div className="side">
-      <div className={"headers " + (lighttheme ? "" : "dark")}>
+      <div className="headers dark">
         <div>
           <IconButton>
             <AccountCircleIcon />
@@ -77,17 +77,14 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className={"search " + (lighttheme ? "" : "dark")}>
+      <div className="search">
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <input
-          placeholder="Search"
-          className={"box " + (lighttheme ? "" : "dark")}
-        />
+        <input placeholder="Search" className="box" />
       </div>
 
-      <div className={"conversation " + (lighttheme ? "" : "dark")}>
+      <div className="conversation">
         {conversations.map((conversation) => (
           <Conversationitem key={conversation.id} {...conversation} />
         ))}

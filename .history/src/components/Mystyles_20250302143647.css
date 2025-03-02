@@ -446,11 +446,6 @@
 }
 .dark {
   background-color: #2d3941 !important;
-  color: white !important;
-}
-.hii {
-  width: 1.25em !important;
-}
-.dark svg {
-  color: white !important;
+  color: whitesmoke !important;
+  background-color: white !important ;
 }

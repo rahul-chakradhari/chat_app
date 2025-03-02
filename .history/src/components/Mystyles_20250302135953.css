@@ -23,7 +23,6 @@
   justify-content: space-between;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-
 .search {
   background-color: white;
   border-radius: 20px;
@@ -445,12 +444,5 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .dark {
-  background-color: #2d3941 !important;
-  color: white !important;
-}
-.hii {
-  width: 1.25em !important;
-}
-.dark svg {
-  color: white !important;
+  background-color: #2d3941;
 }

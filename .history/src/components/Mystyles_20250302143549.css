@@ -446,11 +446,20 @@
 }
 .dark {
   background-color: #2d3941 !important;
-  color: white !important;
+  color: whitesmoke !important;
 }
-.hii {
-  width: 1.25em !important;
+
+.dark .header-icons svg,
+.dark .search svg {
+  color: whitesmoke !important;
 }
-.dark svg {
-  color: white !important;
+
+.dark input {
+  background-color: #2d3941;
+  color: whitesmoke;
+  border: none;
+}
+
+.dark input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }

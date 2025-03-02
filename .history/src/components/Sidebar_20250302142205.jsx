@@ -37,7 +37,7 @@ const Sidebar = () => {
   return (
     <div className="side">
       <div className={"headers " + (lighttheme ? "" : "dark")}>
-        <div>
+        <div className="headericons">
           <IconButton>
             <AccountCircleIcon />
           </IconButton>
@@ -77,17 +77,14 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className={"search " + (lighttheme ? "" : "dark")}>
+      <div className="search">
         <IconButton>
           <SearchIcon />
         </IconButton>
-        <input
-          placeholder="Search"
-          className={"box " + (lighttheme ? "" : "dark")}
-        />
+        <input placeholder="Search" className="box" />
       </div>
 
-      <div className={"conversation " + (lighttheme ? "" : "dark")}>
+      <div className="conversation">
         {conversations.map((conversation) => (
           <Conversationitem key={conversation.id} {...conversation} />
         ))}
