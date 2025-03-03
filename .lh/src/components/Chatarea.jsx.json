@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 43,
+            "activePatchIndex": 55,
             "patches": [
                 {
                     "date": 1740651205181,
@@ -180,6 +180,54 @@
                 {
                     "date": 1740808018145,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n       <div className=\"inputbox\">\r\n         <input\r\n           type=\"text\"\r\n           placeholder=\"Type a message...\"\r\n-          className=\"inputbox\"\r\n+          className=\"input1box\"\r\n         />\r\n         <IconButton>\r\n           <SendIcon />\r\n         </IconButton>\r\n"
+                },
+                {
+                    "date": 1741009508746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n   return (\r\n     <div className=\"chat\">\r\n       {/* 🔹 Chat Header (Only for Raj Vikaramaditya) */}\r\n-      <div className=\"chat-header\">\r\n+      <div className={`chat-header ${lighttheme ? \"\" : \"dark\"}`}>\r\n         <div className=\"chat-info\">\r\n           <div className=\"avatar\">R</div>\r\n           <div className=\"name-time\">\r\n             <h3>{rajConversation.name}</h3>\r\n"
+                },
+                {
+                    "date": 1741009515539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n   return (\r\n     <div className=\"chat\">\r\n       {/* 🔹 Chat Header (Only for Raj Vikaramaditya) */}\r\n-      <div className={`chat-header ${lighttheme ? \"\" : \"dark\"}`}>\r\n+      <div className={`chatheader ${lighttheme ? \"\" : \"dark\"}`}>\r\n         <div className=\"chat-info\">\r\n           <div className=\"avatar\">R</div>\r\n           <div className=\"name-time\">\r\n             <h3>{rajConversation.name}</h3>\r\n"
+                },
+                {
+                    "date": 1741009523094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n \r\n   return (\r\n     <div className=\"chat\">\r\n       {/* 🔹 Chat Header (Only for Raj Vikaramaditya) */}\r\n-      <div className={`chatheader ${lighttheme ? \"\" : \"dark\"}`}>\r\n+      <div className=\"chat-header\">\r\n         <div className=\"chat-info\">\r\n           <div className=\"avatar\">R</div>\r\n           <div className=\"name-time\">\r\n             <h3>{rajConversation.name}</h3>\r\n"
+                },
+                {
+                    "date": 1741009611415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,13 @@\n import { IconButton } from \"@mui/material\";\r\n import SendIcon from \"@mui/icons-material/Send\";\r\n import Messagebyme from \"./Messagebyme\";\r\n import MessageOthers from \"./Messagebyothers\";\r\n+import { useSelector } from \"react-redux\";\r\n+\r\n const Chatarea = () => {\r\n+  const lighttheme = useSelector((state) => state.theme.lightTheme);\r\n+\r\n   const rajConversation = {\r\n     id: 1,\r\n     name: \"Raj Vikaramaditya\",\r\n     lastMessage: \"be in a meet at 6:30 pm today\",\r\n"
+                },
+                {
+                    "date": 1741009650789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n \r\n   return (\r\n     <div className=\"chat\">\r\n       {/* 🔹 Chat Header (Only for Raj Vikaramaditya) */}\r\n-      <div className=\"chat-header\">\r\n+      <div className={`chat-header ${lighttheme ? \"\" : \"dark\"}`}>\r\n         <div className=\"chat-info\">\r\n           <div className=\"avatar\">R</div>\r\n           <div className=\"name-time\">\r\n             <h3>{rajConversation.name}</h3>\r\n"
+                },
+                {
+                    "date": 1741009774468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n import { useSelector } from \"react-redux\";\r\n \r\n const Chatarea = () => {\r\n   const lighttheme = useSelector((state) => state.theme.lightTheme);\r\n-\r\n+  console.log(\"Light Theme Value:\", lighttheme);\r\n   const rajConversation = {\r\n     id: 1,\r\n     name: \"Raj Vikaramaditya\",\r\n     lastMessage: \"be in a meet at 6:30 pm today\",\r\n"
+                },
+                {
+                    "date": 1741009876185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import MessageOthers from \"./Messagebyothers\";\r\n import { useSelector } from \"react-redux\";\r\n \r\n const Chatarea = () => {\r\n-  const lighttheme = useSelector((state) => state.theme.lightTheme);\r\n+  const lighttheme = useSelector((state) => state.theme.islightTheme);\r\n   console.log(\"Light Theme Value:\", lighttheme);\r\n   const rajConversation = {\r\n     id: 1,\r\n     name: \"Raj Vikaramaditya\",\r\n"
+                },
+                {
+                    "date": 1741009976763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n import MessageOthers from \"./Messagebyothers\";\r\n import { useSelector } from \"react-redux\";\r\n \r\n const Chatarea = () => {\r\n-  const lighttheme = useSelector((state) => state.theme.islightTheme);\r\n+  const lighttheme = useSelector((state) => state.theme.isLightTheme);\r\n   console.log(\"Light Theme Value:\", lighttheme);\r\n   const rajConversation = {\r\n     id: 1,\r\n     name: \"Raj Vikaramaditya\",\r\n"
+                },
+                {
+                    "date": 1741010052419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,9 +43,9 @@\n         <Messagebyme />\r\n         <MessageOthers />\r\n       </div>\r\n \r\n-      <div className=\"inputbox\">\r\n+      <div className={`inputbox ${lighttheme ? \"\" : \"dark\"}`}>\r\n         <input\r\n           type=\"text\"\r\n           placeholder=\"Type a message...\"\r\n           className=\"input1box\"\r\n"
+                },
+                {
+                    "date": 1741010074100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n       <div className={`inputbox ${lighttheme ? \"\" : \"dark\"}`}>\r\n         <input\r\n           type=\"text\"\r\n           placeholder=\"Type a message...\"\r\n-          className=\"input1box\"\r\n+          className={`input1box ${lighttheme ? \"\" : \"dark\"}`}\r\n         />\r\n         <IconButton>\r\n           <SendIcon />\r\n         </IconButton>\r\n"
+                },
+                {
+                    "date": 1741010107636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n           <DeleteIcon className=\"trash\" />\r\n         </IconButton>\r\n       </div>\r\n \r\n-      <div className=\"mess\">\r\n+      <div className={`mess ${lighttheme ? \"\" : \"dark\"}`}>\r\n         <Messagebyme />\r\n         <MessageOthers />\r\n         <Messagebyme />\r\n         <MessageOthers />\r\n"
+                },
+                {
+                    "date": 1741015226841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n           <DeleteIcon className=\"trash\" />\r\n         </IconButton>\r\n       </div>\r\n \r\n-      <div className={`mess ${lighttheme ? \"\" : \"dark\"}`}>\r\n+      <div className=\"mess\">\r\n         <Messagebyme />\r\n         <MessageOthers />\r\n         <Messagebyme />\r\n         <MessageOthers />\r\n"
                 }
             ],
             "date": 1740651205181,

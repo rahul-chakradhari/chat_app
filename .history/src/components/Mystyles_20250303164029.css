@@ -1,0 +1,461 @@
+.main {
+  background-color: #f4f5f8;
+  height: 90vh;
+  width: 90vw;
+  display: flex;
+  border-radius: 20px;
+}
+.side {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+}
+.chat {
+  background-color: aliceblue;
+  flex: 0.7;
+}
+.headers {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.search {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.box {
+  outline-width: 0;
+  border: none;
+  font-size: 1.25rem;
+  margin-left: 10px;
+}
+.conver {
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 5px;
+  margin: 10px;
+  flex: 1;
+}
+.conversation {
+  border-radius: 20px;
+  margin: 10px 5px;
+  flex: 1;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 10px 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.conversationitem,
+.listtem {
+  display: flex;
+  align-items: center; /* Items ko vertical center align karega */
+  gap: 12px; /* Icon aur text ke beech gap */
+  padding: 10px;
+  margin: 3px;
+  transition-duration: 0.5s;
+  margin-left: 0px;
+  border-radius: 20px;
+  margin-right: auto;
+  margin-top: 7px;
+  background-color: #f5f5f5; /* Light background */
+  width: 100%;
+  width: calc(100% - 20px);
+  overflow: hidden; /* Extra content hide */
+  white-space: nowrap; /* Ek hi line me rahe */
+  text-overflow: ellipsis; /* Overflow hone par "..." dikhe */
+}
+.conversationitem {
+  cursor: pointer;
+}
+.conversationitem:hover {
+  background-color: #d9d9d9;
+}
+.conversationitem:active {
+  background-color: white;
+}
+.conversationitem::-webkit-scrollbar {
+  display: none;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  flex-shrink: 0; /* Icon ka size maintain rahega */
+}
+
+.conversation-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Ye ensure karega ki text area full width le */
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.message {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.time {
+  margin-right: 25px;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.4);
+  flex-shrink: 0; /* Time ka size fix rahe */
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+}
+.chattingwith {
+  background-color: green;
+}
+.mess {
+  background-color: aquamarine;
+  flex-grow: 1;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.inputbox {
+  background-color: green;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.trash {
+  color: black;
+}
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+  overflow: visible;
+  background: #f8f9fa; /* Light grey */
+}
+
+.chat-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-top: 4px;
+  border-radius: 20px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.avatar {
+  border-color: #d9d9d9;
+  color: white;
+}
+.chat-info {
+  display: flex;
+  align-items: center;
+}
+
+.chat-info .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.trash {
+  color: black;
+}
+
+.mess {
+  flex-grow: 1;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 20px;
+}
+
+.inputbox {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 6px;
+}
+
+.inputbox input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+.name-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-align text properly */
+}
+
+.niche {
+  font-size: 12px;
+  color: gray;
+  margin: 2px 0 0 3px;
+  margin-top: 2px;
+  margin-right: 12px;
+  /* 👈 Adjust left margin properly */
+  padding-right: 42px; /* 🔹 Slight padding for spacing */
+}
+.inputbox {
+  display: flex;
+  justify-content: center;
+}
+.othertextcontent,
+.con-icon {
+  width: 200px; /* Box ka width */
+  height: auto; /* Height content ke according adjust hogi */
+  font-size: 16px; /* Text size change karne ke liye */
+  padding: 10px; /* Text aur border ke beech space ke liye */
+  background-color: aquamarine; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  margin-left: 750px;
+}
+.othertextcontent {
+  border-color: #f5f5f5;
+}
+.selfmessagecontainer {
+  width: 200px; /* Box ka width */
+  height: auto; /* Height content ke according adjust hogi */
+  font-size: 16px; /* Text size change karne ke liye */
+  padding: 10px; /* Text aur border ke beech space ke liye */
+  background-color: lightsalmon; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+}
+.mess {
+  height: 500px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.mess::-webkit-scrollbar {
+  display: none;
+}
+
+.welcome {
+  min-height: 89vh;
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  border-bottom: 2px solid #63d7b0;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.logo {
+  height: 15vw;
+  margin-bottom: 10px;
+}
+.group {
+  flex: 0.7;
+  align-self: center;
+  padding: 20px 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.inputgroup {
+  font-size: 18px;
+  outline-width: 0;
+  border: none;
+}
+.login {
+  height: 90vh;
+  width: 90vw;
+  background-color: #f4f5f8;
+  border-radius: 20px;
+  display: flex;
+}
+.loginimage {
+  flex: 0.3;
+}
+.loginbox {
+  flex: 0.7;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+  color: #63d7b0;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.loginlogo {
+  height: 15vw;
+  margin-top: 201px;
+  margin-left: 75px;
+}
+.logintitle {
+  font-size: 30px;
+} /* Main List Container */
+.list {
+  padding: 20px;
+  width: 100%;
+}
+
+/* Online Users Box */
+.headerlist {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.header-box {
+  width: 100%; /* Adjust as needed */
+  max-width: 1100px;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  border-radius: inherit;
+  margin: 0;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1),
+    -6px -6px 10px rgba(255, 255, 255, 0.7);
+}
+
+.logo-img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+/* Search Box */
+.search {
+  background-color: white;
+  border-radius: 30px;
+  padding: 10px 15px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1),
+    -6px -6px 10px rgba(255, 255, 255, 0.7);
+}
+
+.search .box {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+  padding-left: 10px;
+}
+
+/* User List */
+.uglist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 500px; /* Fixed height for scroll */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.uglist::-webkit-scrollbar {
+  display: none;
+}
+/* Individual User Item */
+.listitem {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1),
+    -6px -6px 10px rgba(255, 255, 255, 0.7);
+  transition: transform 0.2s;
+}
+
+.listitem:hover {
+  background-color: #968f8fc7;
+}
+
+.user-icon {
+  background-color: gray;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.last-message {
+  font-size: 14px;
+  color: gray;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: gray;
+}
+.ugtitle {
+  font-size: large;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.dark {
+  background-color: #2d3941 !important;
+  color: white !important;
+}
+.hii {
+  width: 1.25em !important;
+}
+.dark svg {
+  color: white !important;
+}

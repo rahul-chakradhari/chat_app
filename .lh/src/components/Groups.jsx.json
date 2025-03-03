@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 4,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1740820599203,
@@ -24,6 +24,38 @@
                 {
                     "date": 1740821007003,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n       timeStamp: \"10:30 AM\",\r\n     },\r\n     {\r\n       id: 5,\r\n-      name: \"Hackathon Squad\",\r\n+      name: \"Coder  Squad\",\r\n       lastMessage: \"Upcoming Contest Details\",\r\n       timeStamp: \"11:15 AM\",\r\n     },\r\n     {\r\n"
+                },
+                {
+                    "date": 1740995365677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n       lastMessage: \"New Contribution Guidelines\",\r\n       timeStamp: \"9:45 AM\",\r\n     },\r\n   ]);\r\n+  const lighttheme = useSelector((state) => state.theme.isLightTheme);\r\n \r\n   return (\r\n     <div className=\"list\">\r\n       {/* Group Header */}\r\n"
+                },
+                {
+                    "date": 1740995372143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import \"./myStyles.css\";\r\n import SearchIcon from \"@mui/icons-material/Search\";\r\n import { IconButton } from \"@mui/material\";\r\n import logo from \"./images/live-chat.png\";\r\n-\r\n+import { useSelector } from \"react-redux\";\r\n const Groups = () => {\r\n   const [groups, setGroups] = useState([\r\n     {\r\n       id: 4,\r\n"
+                },
+                {
+                    "date": 1740995464760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n \r\n   return (\r\n     <div className=\"list\">\r\n       {/* Group Header */}\r\n-      <div className=\"headerlist\">\r\n+      <div className={`headerlist ${lighttheme ? \"\" : \"dark\"}`}>\r\n         <div className=\"header-box\">\r\n           <img src={logo} alt=\"logo\" className=\"logo-img\" />\r\n           <p className=\"ugtitle\"> Available Groups</p>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1740995486552,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,9 @@\n \r\n   return (\r\n     <div className=\"list\">\r\n       {/* Group Header */}\r\n-      <div className={`headerlist ${lighttheme ? \"\" : \"dark\"}`}>\r\n+      <div className=\"headerlist\">\r\n         <div className=\"header-box\">\r\n           <img src={logo} alt=\"logo\" className=\"logo-img\" />\r\n           <p className=\"ugtitle\"> Available Groups</p>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1740995493007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n   return (\r\n     <div className=\"list\">\r\n       {/* Group Header */}\r\n       <div className=\"headerlist\">\r\n-        <div className=\"header-box\">\r\n+        <div className={`headerbox ${lighttheme ? \"\" : \"dark\"}`}>\r\n           <img src={logo} alt=\"logo\" className=\"logo-img\" />\r\n           <p className=\"ugtitle\"> Available Groups</p>\r\n         </div>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1740995636930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,10 @@\n   return (\r\n     <div className=\"list\">\r\n       {/* Group Header */}\r\n       <div className=\"headerlist\">\r\n+      console.log(\"Light Theme Status:\", lighttheme);\r\n+\r\n         <div className={`headerbox ${lighttheme ? \"\" : \"dark\"}`}>\r\n           <img src={logo} alt=\"logo\" className=\"logo-img\" />\r\n           <p className=\"ugtitle\"> Available Groups</p>\r\n         </div>\r\n"
+                },
+                {
+                    "date": 1740995657593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,10 +30,9 @@\n   return (\r\n     <div className=\"list\">\r\n       {/* Group Header */}\r\n       <div className=\"headerlist\">\r\n-        console.log(\"Light Theme Status:\", lighttheme);\r\n-        <div className={`headerbox ${lighttheme ? \"\" : \"dark\"}`}>\r\n+        <div className=\"header-box\">\r\n           <img src={logo} alt=\"logo\" className=\"logo-img\" />\r\n           <p className=\"ugtitle\"> Available Groups</p>\r\n         </div>\r\n       </div>\r\n"
+                },
+                {
+                    "date": 1740995735123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,9 @@\n   return (\r\n     <div className=\"list\">\r\n       {/* Group Header */}\r\n       <div className=\"headerlist\">\r\n-        <div className=\"header-box\">\r\n+        <div className={`headerbox ${lighttheme ? \"\" : \"dark\"}`}>\r\n           <img src={logo} alt=\"logo\" className=\"logo-img\" />\r\n           <p className=\"ugtitle\"> Available Groups</p>\r\n         </div>\r\n       </div>\r\n"
                 }
             ],
             "date": 1740820599203,

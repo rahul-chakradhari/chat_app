@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 13,
+            "activePatchIndex": 14,
             "patches": [
                 {
                     "date": 1740651064736,
@@ -60,6 +60,10 @@
                 {
                     "date": 1740818530787,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,17 +3,19 @@\n import Chatarea from \"./Chatarea\";\r\n import Welcome from \"./Welcome\";\r\n import Creategroups from \"./Creategroups\";\r\n import Users from \"./Users\";\r\n+import { Outlet } from \"react-router-dom\";\r\n \r\n const Maincontainer = () => {\r\n   return (\r\n     <div className=\"main\">\r\n       <Sidebar />\r\n+      <Outlet/>\r\n       {/*<Creategroups />*/}\r\n       {/*<Welcome />*/}\r\n       {/*<Chatarea />*/}\r\n-      <Users />\r\n+      {/*<Users />*/}\r\n     </div>\r\n   );\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1740992636609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,13 +9,13 @@\n const Maincontainer = () => {\r\n   return (\r\n     <div className=\"main\">\r\n       <Sidebar />\r\n-      <Outlet />\r\n+     {/* <Outlet />*/}\r\n       {/*<Creategroups />*/}\r\n       {/*<Welcome />*/}\r\n       {/*<Chatarea />*/}\r\n-      {/*<Users />*/}\r\n+      {<Users />}\r\n     </div>\r\n   );\r\n };\r\n \r\n"
                 }
             ],
             "date": 1740651064736,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 4,
             "patches": [
                 {
                     "date": 1740651665017,
@@ -16,6 +16,14 @@
                 {
                     "date": 1740817267621,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,13 @@\n import { StrictMode } from \"react\";\n import { createRoot } from \"react-dom/client\";\n import \"./index.css\";\n import App from \"./App.jsx\";\n+import { BrowserRouter } from \"react-router-dom\";\n \n createRoot(document.getElementById(\"root\")).render(\n+  <BrowserRouter>\n   <StrictMode>\n     <App />\n   </StrictMode>\n+  </BrowserRouter>\n );\n"
+                },
+                {
+                    "date": 1740992401742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,14 @@\n import { createRoot } from \"react-dom/client\";\n import \"./index.css\";\n import App from \"./App.jsx\";\n import { BrowserRouter } from \"react-router-dom\";\n+import { Provider } from \"react-redux\";\n \n createRoot(document.getElementById(\"root\")).render(\n   <BrowserRouter>\n     <StrictMode>\n+      <Provider/>\n       <App />\n     </StrictMode>\n   </BrowserRouter>\n );\n"
+                },
+                {
+                    "date": 1740992493318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import \"./index.css\";\n import App from \"./App.jsx\";\n import { BrowserRouter } from \"react-router-dom\";\n import { Provider } from \"react-redux\";\n-\n+import store from \"./components/features/store.js\"\n createRoot(document.getElementById(\"root\")).render(\n   <BrowserRouter>\n     <StrictMode>\n       <Provider />\n"
                 }
             ],
             "date": 1740651665017,
