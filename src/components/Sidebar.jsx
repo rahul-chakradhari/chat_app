@@ -22,8 +22,8 @@ const Sidebar = () => {
   const [conversations, setConversations] = useState([
     {
       id: 1,
-      name: "Raj Vikaramaditya",
-      lastMessage: "Be in a meet at 6:30 PM today",
+      name: "Raj ",
+      lastMessage: "Hai",
       timeStamp: "Today",
     },
     {
@@ -34,7 +34,7 @@ const Sidebar = () => {
     },
     {
       id: 3,
-      name: "Code with Harry",
+      name: "Harry",
       lastMessage: "Subscribe to my channel",
       timeStamp: "Today",
     },
@@ -49,7 +49,7 @@ const Sidebar = () => {
             <AccountCircleIcon />
           </IconButton>
         </div>
-        <div>
+        <div className="sicons">
           <IconButton onClick={() => navigate("users")}>
             <PersonAddAlt1Icon />
           </IconButton>
